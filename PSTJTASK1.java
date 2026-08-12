@@ -11,12 +11,10 @@ public class PSTJTASK1 {
             salaries.add(sc.nextInt());
         }
 
-        // Functional transformation: increase each salary by 10%
         List<Integer> updatedSalaries = salaries.stream()
-                .map(salary -> (int)(salary * 2))   // increase by 10%
+                .map(salary -> (int)(salary * 2))  
                 .collect(Collectors.toList());
 
-        // Print updated salaries
         updatedSalaries.forEach(sal -> System.out.print(sal + " "));
     }
 }
